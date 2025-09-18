@@ -34,6 +34,7 @@ GEM
     database_cleaner-core (2.0.1)
     diff-lcs (1.6.2)
     drb (2.2.3)
+    fiddle (1.1.8)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     json (2.13.2)
@@ -93,6 +94,12 @@ GEM
     rubocop-ast (1.46.0)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
+    rubocop-rake (0.7.1)
+      lint_roller (~> 1.1)
+      rubocop (>= 1.72.1)
+    rubocop-rspec (3.7.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     securerandom (0.4.1)
@@ -131,14 +138,21 @@ PLATFORMS
 DEPENDENCIES
   activerecord (~> 7.1)
   database_cleaner
+  fiddle
+  logger
   ostruct
   pry
   rake
   require_all
   rspec
   rubocop
+  rubocop-rake (~> 0.7.1)
+  rubocop-rspec (~> 3.7)
   sinatra-activerecord
   sqlite3 (~> 1.6)
+
+RUBY VERSION
+   ruby 3.3.5p100
 
 BUNDLED WITH
    2.7.1

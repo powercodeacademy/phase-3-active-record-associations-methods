@@ -46,7 +46,7 @@ that joins between our `artists` and `genres` tables.
 To run the migrations, run:
 
 ```console
-$ bundle exec rake db:migrate
+bin/rake db:migrate
 ```
 
 ### Building our Associations using Active Record Macros
@@ -96,19 +96,19 @@ play around with our code using the console task we wrote for you in the
 `Rakefile`. Run the migrations (if you haven't already):
 
 ```console
-$ bundle exec rake db:migrate
+bin/rake db:migrate
 ```
 
 Then seed the database:
 
 ```console
-$ bundle exec rake db:seed
+bin/rake db:seed
 ```
 
 Then open the console:
 
 ```console
-$ bundle exec rake console
+bin/rake console
 ```
 
 Then try out some methods:
